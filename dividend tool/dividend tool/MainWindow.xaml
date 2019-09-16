@@ -25,12 +25,20 @@
             x:Name="SubmitButton"
             Grid.Row="0"
             Grid.Column="0"
+            Click="SubmitButton_Click"
             Content="Get Amount" />
 
         <TextBox
             x:Name="DividendInfoTextBox"
             Grid.Row="1"
-            Grid.Column="1" />
+            Grid.Column="1"
+            AcceptsReturn="True" />
+
+        <TextBlock 
+            x:Name="TotalValueTextBlock"
+            Grid.Column="2"
+            Grid.Row="1"
+            />
 
     </Grid>
 </Window>
