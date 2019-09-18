@@ -97,9 +97,11 @@ namespace dividend_tool
                         throw new System.InvalidOperationException("Symbols don't match");
                     }
                     totalValue += stocksAndAmount[i].Value * stocksAndPrice[i].Value;
+
+                    decimal value = Convert.ToDecimal(totalValue);
                 }
 
-                TotalValueTextBlock.Text = totalValue.ToString();
+                TotalValueTextBlock.Text = "Total Value: " + totalValue.ToString("C");
             }
             catch(Exception ex)
             {
