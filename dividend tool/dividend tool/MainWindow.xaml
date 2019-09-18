@@ -54,17 +54,23 @@
             x:Name="DividendInfoTextBox"
             Grid.Row="1"
             Grid.Column="1"
-            AcceptsReturn="True" 
-            Margin="0,0,0,10"/>
+            Margin="0,0,0,10"
+            AcceptsReturn="True" />
 
         <TextBlock
             x:Name="TotalValueTextBlock"
             Grid.Row="1"
             Grid.Column="2"
-            Text="Total Value:"
-            FontFamily="arial"
             Margin="10,10,0,0"
-            />
+            FontFamily="arial"
+            Text="Total Value:" />
+
+        <TextBlock
+            Grid.Row="2"
+            Grid.Column="0"
+            Margin="10">
+            version 1.0
+        </TextBlock>
 
     </Grid>
 </Window>
